@@ -1,0 +1,35 @@
+version: 2
+updates:
+  # Mantém dependências Maven atualizadas
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "Douglas45308"
+    assignees:
+      - "Douglas45308"
+    labels:
+      - "dependencies"
+      - "maven"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+
+  # Mantém GitHub Actions atualizadas
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "Douglas45308"
+    assignees:
+      - "Douglas45308"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
