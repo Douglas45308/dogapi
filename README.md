@@ -11,7 +11,7 @@ Validar os endpoints da Dog API garantindo que:
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Java 11** - Linguagem de programação
+- **Java 17** - Linguagem de programação
 - **Maven** - Gerenciador de dependências
 - **Cucumber** - Framework BDD
 - **JUnit 5** - Framework de testes
