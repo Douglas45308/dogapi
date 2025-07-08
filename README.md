@@ -26,4 +26,25 @@ Validar os endpoints da Dog API garantindo que:
 2. `GET /breed/{breed}/images` - Obtém imagens de uma raça específica
 3. `GET /breeds/image/random` - Obtém uma imagem aleatória de cão
 
-## 🏗️ Estrutura do Projeto
+ Instruções de Uso
+🚀 Como usar este projeto:
+
+Extrair o arquivo: Descompacte o arquivo ZIP em seu diretório de trabalho
+Navegar para o diretório:
+bashcd dog-api-test-automation
+
+Instalar dependências:
+bashmvn clean install
+
+Executar testes:
+bash# Todos os testes
+mvn clean test
+
+# Apenas smoke tests
+./scripts/run-tests.sh smoke
+
+# Usando Makefile
+make test
+
+Gerar relatórios:
+bash mvn allure:serve
